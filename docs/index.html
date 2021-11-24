@@ -1,8 +1,171 @@
 <html>
- <head>
-     <title>Main page</title>
- </head>
- <body>
-     <h1>This is the main page of my website</h1>
- </body>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #fffff0;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: beige;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #696969	;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #FCFCFC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: MistyRose;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: LavenderBlush2;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #E6E6FA;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: Snow;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Favorite Anime</h1>
+  <p>NARUTO</p>
+</div>
+
+<div class="topnav">
+  <a href="#">welcome</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Introduce</h2>
+      <h5>2021/11/24</h5>
+	  <img src="https://p2.bahamut.com.tw/B/2KU/19/716063add22e2bb964cb9d3be319j235.JPG"
+	 width="250"
+	 height="334.5"
+>
+      <p>From Wikipedia</p>
+      <p>Naruto (Japanese: NARUTOナルト) is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village. The story is told in two parts – the first set in Naruto's pre-teen years, and the second in his teens. The series is based on two one-shot manga by Kishimoto: Karakuri (1995), which earned Kishimoto an honorable mention in Shueisha's monthly Hop Step Award the following year, and Naruto (1997).</p>
+    </div>
+    <div class="card">
+      <h2>My favorite character</h2>
+      <h5>2021/11/24</h5>
+	  	  <img src="http://p9.itc.cn/images01/20201121/9ac73e80d78a40b3b8ac3d65ca5c27b5.jpeg"
+	 width="405"
+	 height="405"
+>
+      <p>From Wikipedia</p>
+      <p>Itachi Uchiha (Japanese: うちは イタチ, Hepburn: Uchiha Itachi) is a fictional character in the Naruto manga and anime series created by Masashi Kishimoto. Itachi is the older brother of Sasuke Uchiha, and is responsible for killing all the members of their clan, sparing only Sasuke. He appears working as a terrorist from the organisation Akatsuki and serves as Sasuke's greatest enemy. During the second part of the manga, Itachi becomes involved in attacks to ninjas possessing tailed-beast creatures until facing Sasuke in a one-on-one battle. Although Itachi perishes during the final duel, it is later revealed that Itachi had a secret reason for assassinating the Uchiha clan. </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About author</h2>
+	 <img src="https://static.wikia.nocookie.net/naruto3258/images/7/7e/454c37745fb133a7b35e0a4d420ea685.jpg/revision/latest?cb=20160202224400&path-prefix=zh"
+	 width="326.9"
+	 height="246.05"
+>
+      <p> Masashi Kishimoto (岸本 斉史, Kishimoto Masashi, born November 8, 1974[1]) is a Japanese manga artist. His best known work, Naruto, was in serialization from 1999 to 2014 and has sold over 250 million copies worldwide in 46 countries as of May 2019.[2] The series has been adapted into two anime and multiple films, video games, and related media. Besides the Naruto manga, Kishimoto also personally supervised the two canonical anime films, The Last: Naruto the Movie and Boruto: Naruto the Movie, and has written several one-shot stories. In 2019, Kishimoto wrote Samurai 8: The Tale of Hachimaru which ended in March 2020. From May 2016 through October 2020 he supervised the Boruto: Naruto Next Generations manga written by Ukyō Kodachi and illustrated by Mikio Ikemoto. In November 2020 it was announced that he had taken over as writer on the series, replacing Kodachi.</p>
+    </div>
+    <div class="card">
+      <h3>One of movie</h3>
+     <img src="https://img.ruten.com.tw/s2/1/a6/60/21447785784928_227.jpg"
+	 width="400"
+	 height="398.4"
+>
+    </div>
+    <div class="card">
+      <h3>Main character</h3>
+      <p>Uzumaki Naruto/Uchiha Sasuke/Haruno Sakura</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank You For Watching</h2>
+</div>
+
+</body>
 </html>
