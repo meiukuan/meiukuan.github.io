@@ -1,288 +1,57 @@
 <html>
 <head>
 <style>
-.flex-container {
-	height: 200px;
-	display: flex;
-	background-color: #D8D8EB;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px darkgray;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
+ img:hover {opacity: 0.7;}
+.flex {display: flex;
+        border-radius: 10px;
+        background-color: #7373B9;
+		margin: 10px;
+        padding: 20px;
+        flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;}
+ .flex a{
+  background-color: #C7C7E2;
+  margin: 20px;
+  padding: 15px;
+  font-size: 10px;
   border-radius: 10px;
+  height: 200px;
 }
-
-.flex-container {
-  display: flex;
-  background-color: #D8D8EB;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px darkgray;
-  margin: 10px;
-}
-
-.justify-flex-start
-{
-justify-content: flex-start;
-}
-.justify-flex-end
-{
-justify-content: flex-end;
-}
-.justify-center
-{
-justify-content: center;
-}
-.justify-space-between
-{
-justify-content: space-between;
-}
-.justify-space-around
-{
-justify-content: space-around;
-}
-.justify-space-evenly
-{
-justify-content: space-evenly;
-}
-
-a {
-font-size: 2em;
-position: fixed;
-top: 10px;
-left: 50%;
-}
-
-
-
-.align-items-stretch {align-items: stretch;}
-.align-items-center {align-items: center;}
-.align-items-flex-start {align-items: flex-start;}
-.align-items-flex-end {align-items: flex-end;}
-.align-items-baseline {align-items: baseline;}
-a {
-font-size: 2em;
-position: fixed;
-top: 10px;
-left: 50%;
-}
-
-
-
-
-
-
-
-
-.flex-container-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-container-nowrap {
-  flex-wrap: nowrap;
-}
-
-.flex-container-wrapreverse {
-  flex-wrap: wrap-reverse;
-}
-
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  border-radius: 10px;
-}
+ 
 </style>
 </head>
+
+
 <body>
+<div class="flex ">
+<a href="1.jfif"
+target="_blank"><img src="1.jfif"></a>
+<a href="2.jfif"
+target="_blank"><img src="2.jfif"></a>
+<a href="3.jpg"
+target="_blank"><img src="3.jpg"></a>
+<a href="4.jpg"
+target="_blank"><img src="4.jpg"></a>
 
+<a href="5.jpg"
+target="_blank"><img src="5.jpg"></a>
+<a href="6.jpg"
+target="_blank"><img src="6.jpg"></a>
+<a href="7.jpg"
+target="_blank"><img src="7.jpg"></a>
+<a href="8.png"
+target="_blank"><img src="8.png"></a>
+<a href="9.png"
+target="_blank"><img src="9.png"></a>
+<a href="10.jpg"
+target="_blank"><img src="10.jpg"></a>
+<a href="11.png"
+target="_blank"><img src="11.png"></a>
+<a href="12.png"
+target="_blank"><img src="12.png"></a>
 
-<h1>stretch</h1>
-<div class="flex-container align-items-stretch">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>center</h1>
-<div class="flex-container align-items-center">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>flex-start</h1>
-<div class="flex-container align-items-flex-start">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>flex-end</h1>
-<div class="flex-container align-items-flex-end">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>baseline</h1>
-<div class="flex-container align-items-baseline">
-	<div><h1>1</h1></div>
-	<div><h5>2</h3></div>
-	<div><h2>3</h2></div>
-	<div>4</div>  
-	<div><h5>5<h5></div>  
-	<div>6</div>  
-</div>
-
-
-
-<h1>flex-start</h1>
-<div class="flex-container justify-flex-start">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>flex-end</h1>
-<div class="flex-container justify-flex-end">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>center</h1>
-<div class="flex-container justify-center">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>space-between</h1>
-<div class="flex-container justify-space-between">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>space-around</h1>
-<div class="flex-container justify-space-around">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-<h1>space-evenly</h1>
-<div class="flex-container justify-space-evenly">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>  
-	<div>5</div>  
-	<div>6</div>  
-</div>
-
-
-<h1>Flex Container default</h1>
-
-<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div> 
-  <div>8</div> 
-  <div>9</div> 
-  <div>10</div>
-  <div>11</div> 
-  <div>12</div> 
-  <div>13</div> 
-  <div>14</div> 
-</div>
-<h1>Flex Container wrap</h1>
-<div class="flex-container flex-container-wrap">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div> 
-  <div>8</div> 
-  <div>9</div> 
-  <div>10</div>
-  <div>11</div> 
-  <div>12</div> 
-  <div>13</div> 
-  <div>14</div> 
-</div>
-<h1>Flex Container no wrap</h1>
-<div class="flex-container flex-container-nowrap">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div> 
-  <div>8</div> 
-  <div>9</div> 
-  <div>10</div>
-  <div>11</div> 
-  <div>12</div> 
-  <div>13</div> 
-  <div>14</div> 
-</div>
-<h1>Flex Container wrap reverse</h1>
-<div class="flex-container flex-container-wrapreverse">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div> 
-  <div>8</div> 
-  <div>9</div> 
-  <div>10</div>
-  <div>11</div> 
-  <div>12</div> 
-  <div>13</div> 
-  <div>14</div> 
 </div>
 </body>
 </html>
